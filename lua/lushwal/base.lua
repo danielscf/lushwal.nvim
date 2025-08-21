@@ -9,6 +9,12 @@ local scheme = lush(function()
 	-- selene: allow(undefined_variable)
 	return {
 		Normal({ fg = colors.foreground, bg = colors.background }),
+		NormalFloat({ fg = colors.foreground, bg = colors.background }),
+		NormalNC({ fg = colors.foreground, bg = colors.transparent }),
+
+		Float({ fg = colors.color5 }),
+		FloatBorder({ fg = colors.foreground, bg = colors.transparent }),
+
 		Bold({ Normal, gui = "bold" }),
 		Italic({ Normal, gui = "italic" }),
 
