@@ -14,6 +14,7 @@ local function generate_colors()
 
 	-- Generate Color Variables:
 	if ok then
+		local transparent = "NONE"
 		local foreground = hsl(colors.special.foreground)
 		local background = not require("lushwal").config.transparent_background and hsl(colors.special.background)
 			or nil
@@ -36,6 +37,7 @@ local function generate_colors()
 		local color15 = hsl(colors.colors.color15)
 
 		return {
+			transparent = transparent,
 			foreground = foreground,
 			background = background,
 			cursor = cursor,
