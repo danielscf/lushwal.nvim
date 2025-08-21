@@ -9,12 +9,6 @@ local scheme = lush(function()
 	-- selene: allow(undefined_variable)
 	return {
 		Normal({ fg = colors.foreground, bg = colors.background }),
-		NormalFloat({ fg = colors.foreground, bg = colors.background }),
-		NormalNC({ fg = colors.foreground, bg = colors.transparent }),
-
-		Float({ fg = colors.color5 }),
-		FloatBorder({ fg = colors.foreground, bg = colors.transparent }),
-
 		Bold({ Normal, gui = "bold" }),
 		Italic({ Normal, gui = "italic" }),
 
@@ -104,7 +98,7 @@ local scheme = lush(function()
 		StatusLineNC({ fg = colors.grey, bg = colors.br_black }),
 		StatusLineTerm({ fg = colors.br_green, bg = colors.green }),
 		StatusLineTermNC({ fg = colors.br_yellow, bg = colors.br_black }),
-		WinBar({ fg = colors.white, bg = colors.background, gui = "None"}),
+		WinBar({ fg = colors.white, bg = colors.background, gui = "None" }),
 		WinBarNC({ fg = colors.grey, bg = colors.background, gui = "None" }),
 		User({ Normal }),
 
