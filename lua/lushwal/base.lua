@@ -9,7 +9,6 @@ local scheme = lush(function()
 	-- selene: allow(undefined_variable)
 	return {
 		Normal({ fg = colors.foreground, bg = colors.background }),
-
 		NormalFloat({ fg = colors.foreground, bg = colors.background }),
 		NormalNC({ fg = colors.foreground, bg = colors.transparent }),
 
@@ -98,8 +97,11 @@ local scheme = lush(function()
 		SpellCap({ gui = "underline", fg = colors.yellow, sp = colors.yellow }),
 		SpellRare({ gui = "underline", fg = colors.purple, sp = colors.purple }),
 
-		StatusLine({ fg = colors.white, bg = colors.br_black }),
-		StatusLineNC({ fg = colors.grey, bg = colors.br_black }),
+		StatusLine({ fg = colors.transparent, bg = colors.transparent }),
+		StatusLineNC({ fg = colors.transparent, bg = colors.transparent }),
+		-- StatusLine({ fg = colors.white, bg = colors.br_black }),
+		-- StatusLineNC({ fg = colors.grey, bg = colors.br_black }),
+
 		StatusLineTerm({ fg = colors.br_green, bg = colors.green }),
 		StatusLineTermNC({ fg = colors.br_yellow, bg = colors.br_black }),
 		WinBar({ fg = colors.white, bg = colors.background, gui = "None" }),
