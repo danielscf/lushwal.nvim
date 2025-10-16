@@ -13,25 +13,25 @@ local scheme = lush(function()
 		NormalFloat({ fg = colors.foreground, bg = colors.transparent }),
 		NormalNC({ fg = colors.background, bg = colors.transparent }),
 
-		Float({ fg = colors.orange }),
+		Float({ fg = colors.color5 }),
 		FloatBorder({ fg = colors.foreground, bg = colors.transparent }),
 
 		Bold({ Normal, gui = "bold" }),
 		Italic({ Normal, gui = "italic" }),
 
-		Boolean({ fg = colors.orange }),
+		Boolean({ fg = colors.color5 }),
 		Character({ fg = colors.color1 }),
 		Comment({ fg = colors.color7, gui = "italic" }),
 		Conditional({ fg = colors.purple }),
-		Constant({ fg = colors.orange }),
+		Constant({ fg = colors.color5 }),
 		Define({ fg = colors.purple }),
 		Delimiter({ fg = colors.brown }),
 		Function({ fg = colors.color4 }),
 
 		Cursor({ fg = colors.background, bg = colors.foreground }),
 		CursorColumn({ fg = colors.grey }),
-		CursorLine({ bg = colors.br_black, gui = "None" }),
-		CursorLineNr({ fg = colors.color7, bg = colors.background, gui = "None" }),
+		CursorLine({ bg = colors.transparent }),
+		CursorLineNr({ fg = colors.color1, bg = colors.background, gui = "None" }),
 
 		EndOfBuffer({ fg = colors.foreground, bg = colors.background }),
 		Directory({ fg = colors.color4 }),
@@ -77,8 +77,8 @@ local scheme = lush(function()
 		DiffRemoved({ DiffDelete }),
 
 		VertSplit({ fg = colors.color7, bg = colors.background }),
-		Visual({ bg = colors.grey, fg = colors.background }),
-		VisualNOS({ fg = colors.color1 }),
+		Visual({ fg = colors.foreground, bg = colors.color3 }),
+		VisualNOS({ bg = colors.transparent }),
 
 		WinBar({ fg = colors.color7, bg = colors.background, gui = "None" }),
 		WinBarNC({ fg = colors.grey, bg = colors.background, gui = "None" }),
@@ -88,8 +88,8 @@ local scheme = lush(function()
 		-- healthSuccess = { fg = colors.color4 },
 		-- healthWarning = { fg = colors.color5 },
 
-		Search({ fg = colors.br_grey, bg = colors.color3 }),
-		IncSearch({ fg = colors.br_black, bg = colors.orange }),
+		Search({ fg = colors.foreground, bg = colors.color2 }),
+		IncSearch({ fg = colors.background, bg = colors.color3, gui = "bold" }),
 
 		Macro({ fg = colors.color1 }),
 		MatchParen({ fg = colors.foreground, bg = colors.br_grey }),
@@ -117,7 +117,7 @@ local scheme = lush(function()
 		Include({ fg = colors.color4 }),
 		Keyword({ fg = colors.purple }),
 		Label({ fg = colors.color3 }),
-		Number({ fg = colors.orange }),
+		Number({ fg = colors.color5 }),
 		Operator({ fg = colors.foreground }),
 		PreProc({ fg = colors.color3 }),
 		Repeat({ fg = colors.color3 }),
@@ -132,7 +132,18 @@ local scheme = lush(function()
 
 		gitCommitOverflow({ fg = colors.color1 }),
 		gitCommitSummary({ fg = colors.color2 }),
+
+		MasonHighlightBlockBold({ fg = colors.foreground, bg = colors.color3 }),
+		MasonMutedBlock({ fg = colors.foreground, bg = colors.transparent }),
+		MasonHighlight({ fg = colors.color6, bg = colors.transparent }),
+
+		-- SnacksPickerList = "Normal",
+		-- SnacksPickerMatch = "Normal",
+		-- SnacksPickerDir = "Normal",
+		-- SnacksPickerListCursorLine = "Visual",
+		-- SnacksPickerPrompt = "Normal",
 	}
+
 	-- selene: deny(undefined_variable)
 end)
 
