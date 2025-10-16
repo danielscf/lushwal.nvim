@@ -49,8 +49,8 @@ local scheme = lush(function()
 		PmenuThumb({ fg = colors.color2 }),
 
 		Special({ fg = colors.color6 }),
-		SpecialKey({ fg = colors.br_grey }), -- SpecialKey = { fg = colors.color4 },
-		SpecialChar({ fg = colors.brown }), -- SpecialChar = { fg = colors.foreground },
+		SpecialKey({ fg = colors.color4 }),
+		SpecialChar({ fg = colors.foreground }),
 		SpecialComment({ fg = colors.color2 }),
 
 		SpellBad({ gui = "underline", fg = colors.color1, sp = colors.color1 }),
@@ -67,7 +67,7 @@ local scheme = lush(function()
 		TermCursorNC({ fg = colors.foreground, bg = colors.cursor }),
 
 		DiffAdd({ fg = colors.color2, bg = colors.br_black, gui = "bold" }),
-		DiffChange({ fg = colors.br_grey, bg = colors.br_black }),
+		DiffChange({ fg = colors.transparent, bg = colors.color0 }),
 		DiffDelete({ fg = colors.color1, bg = colors.br_black, gui = "bold" }),
 		DiffText({ fg = colors.color4, bg = colors.br_black }),
 		DiffFile({ fg = colors.color1, bg = colors.background }),
@@ -89,7 +89,7 @@ local scheme = lush(function()
 		-- healthWarning = { fg = colors.color5 },
 
 		Search({ fg = colors.foreground, bg = colors.color2 }),
-		IncSearch({ fg = colors.background, bg = colors.color3, gui = "bold" }),
+		IncSearch({ fg = colors.foreground, bg = colors.color3, gui = "bold" }),
 
 		Macro({ fg = colors.color1 }),
 		MatchParen({ fg = colors.foreground, bg = colors.br_grey }),
@@ -136,12 +136,6 @@ local scheme = lush(function()
 		MasonHighlightBlockBold({ fg = colors.foreground, bg = colors.color3 }),
 		MasonMutedBlock({ fg = colors.foreground, bg = colors.transparent }),
 		MasonHighlight({ fg = colors.color6, bg = colors.transparent }),
-
-		-- SnacksPickerList = "Normal",
-		-- SnacksPickerMatch = "Normal",
-		-- SnacksPickerDir = "Normal",
-		-- SnacksPickerListCursorLine = "Visual",
-		-- SnacksPickerPrompt = "Normal",
 	}
 
 	-- selene: deny(undefined_variable)
