@@ -44,7 +44,7 @@ local scheme = lush(function()
 		Folded({ fg = colors.color7, bg = colors.br_black, gui = "italic" }),
 
 		PMenu({ fg = colors.foreground, bg = colors.transparent }),
-		PMenuSel({ fg = colors.transparent, bg = colors.color0 }),
+		PMenuSel({ fg = colors.transparent, bg = colors.color2 }),
 		PmenuSbar({ fg = colors.transparent }),
 		PmenuThumb({ fg = colors.color2 }),
 
