@@ -21,7 +21,7 @@ local scheme = lush(function()
 
 		Boolean({ fg = colors.orange }),
 		Character({ fg = colors.color1 }),
-		Comment({ fg = colors.color7, gui = "bold" }),
+		Comment({ fg = colors.color7, gui = "italic" }),
 		Conditional({ fg = colors.purple }),
 		Constant({ fg = colors.orange }),
 		Define({ fg = colors.purple }),
@@ -43,10 +43,10 @@ local scheme = lush(function()
 		FoldColumn({ fg = colors.color4, bg = colors.background }),
 		Folded({ fg = colors.color7, bg = colors.br_black, gui = "italic" }),
 
-		PMenu({ fg = colors.color7, bg = colors.br_black }),
-		PMenuSel({ fg = colors.foreground, bg = colors.color1 }),
-		PmenuSbar({ fg = colors.grey }),
-		PmenuThumb({ fg = colors.foreground }),
+		PMenu({ fg = colors.foreground, bg = colors.transparent }),
+		PMenuSel({ fg = colors.transparent, bg = colors.color0 }),
+		PmenuSbar({ fg = colors.transparent }),
+		PmenuThumb({ fg = colors.color2 }),
 
 		Special({ fg = colors.color6 }),
 		SpecialKey({ fg = colors.br_grey }), -- SpecialKey = { fg = colors.color4 },
