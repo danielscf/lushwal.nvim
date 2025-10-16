@@ -10,7 +10,7 @@ local scheme = lush(function()
 	-- selene: allow(undefined_variable)
 	return {
 		Normal({ fg = colors.foreground, bg = colors.transparent }),
-		NormalFloat({ fg = colors.background, bg = colors.transparent }),
+		NormalFloat({ fg = colors.foreground, bg = colors.transparent }),
 		NormalNC({ fg = colors.background, bg = colors.transparent }),
 
 		Float({ fg = colors.orange }),
@@ -21,7 +21,7 @@ local scheme = lush(function()
 
 		Boolean({ fg = colors.orange }),
 		Character({ fg = colors.color1 }),
-		Comment({ fg = colors.color7, gui = "italic" }),
+		Comment({ fg = colors.color7, gui = "bold" }),
 		Conditional({ fg = colors.purple }),
 		Constant({ fg = colors.orange }),
 		Define({ fg = colors.purple }),
